@@ -1,0 +1,127 @@
+/*===GOOGLE FONTS===*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+/*===VARIABLES CSS===*/
+:root {
+  --header-height: 3rem;
+  --nav-width: 324px;
+
+  /*===Font weight===*/
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+
+  /*Colours*/
+  --first-color: #cc4b2c;
+  --first-color-dark: #662616;
+  --first-color-darken: #290f09;
+  --text-color: #54423d;
+  --first-color-light: #eae7e6;
+  --first-color-lighten: #fffafa;
+  --boxShadowColor: hsl(240, 4%, 36%);
+  --btnBg: linear-gradient(
+    90deg,
+    rgba(101, 11, 11, 0.927608543417367) 0%,
+    rgba(82, 30, 18, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+
+  /*===Font and topography===*/
+  --body-font: "Poppins", san-serif;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+
+  /*===Margenes===*/
+  --mb-1: 0.5rem;
+  --mb-2: 1rem;
+  --mb-3: 1.5rem;
+  --mb-4: 2rem;
+  --mb-5: 2.5rem;
+
+  /*===z index===*/
+  --z-fixed: 100;
+}
+
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: fit-content;
+  background: var(--first-color-light);
+  display: flex;
+  /* padding-left: 5%; */
+  /* padding-right: 5%; */
+  /* justify-content: center; */
+  align-items: center;
+  justify-content: flex-end;
+  z-index: 100;
+  box-shadow: 0 3px 4px var(--boxShadowColor);
+}
+
+.navLogo {
+  margin-right: 300px;
+  margin-left: 20px;
+  padding: 5px;
+   .logo {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.nav-header{
+  display: flex;
+  text-decoration: none;
+  
+  ul li{
+    display: inline-block;
+    list-style: none;
+    text-decoration: none;
+    margin: 5px 20px;
+    font-size: var(--normal-font-size);
+    cursor: pointer;
+  }
+}
+
+.header-btn{
+  width: 120px;
+  height: 40px;
+  color: var(--first-color-darken);
+  padding: 2px 4px;
+  margin-top: 6px;
+  border: none;
+  background: var(--first-color-lighten);
+  cursor: pointer;
+
+  &:hover{
+    color: var(--first-color-light);
+    background: rgba(8,0,58, 0.9);  
+    border-radius: 20px;  
+  }
+}
+
+/* Mobile Responsive Styling */
+@media screen and (max-width: 480px) {
+  .navbar {
+    justify-content: space-between;
+    /* padding-left: 2%;
+    padding-right: 2%; */
+  }
+
+  .navLogo .logo {
+    width: 80px; /* Adjust logo size for smaller screens */
+    height: 50px;
+  }
+
+  .nav-header {
+    display: none; /* Hide nav links by default on smaller screens */
+  }
+
+  .header-btn {
+    display: none; /* Hide header button by default on smaller screens */
+  }
+}

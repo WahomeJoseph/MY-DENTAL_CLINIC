@@ -1,0 +1,60 @@
+/*===GOOGLE FONTS===*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+/*===VARIABLES CSS===*/
+:root {
+  --header-height: 3rem;
+  --nav-width: 324px;
+
+  /*===Font weight===*/
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+
+  /*Colours*/
+  --first-color: #cc4b2c;
+  --first-color-dark: #662616;
+  --first-color-darken: #290f09;
+  --text-color: #54423d;
+  --first-color-light: #eae7e6;
+  --first-color-lighten: #fffafa;
+  --boxShadowColor: hsl(240, 4%, 36%);
+
+  /*===Font and topography===*/
+  --body-font: "Poppins", san-serif;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+
+  /*===Margenes===*/
+  --mb-1: 0.5rem;
+  --mb-2: 1rem;
+  --mb-3: 1.5rem;
+  --mb-4: 2rem;
+  --mb-5: 2.5rem;
+
+  /*===z index===*/
+  --z-fixed: 100;
+}
+
+
+.head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    padding-top: 5%;
+  
+    h2 span{
+      font-size: 6rem;
+      color: var(--first-color-darken);
+      margin-top: 5px;
+      text-transform: none;
+      margin-bottom: 1px;
+    }
+  }
+  

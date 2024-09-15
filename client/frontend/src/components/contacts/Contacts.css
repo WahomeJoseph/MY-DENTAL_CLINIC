@@ -1,0 +1,128 @@
+/*===GOOGLE FONTS===*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+/*===VARIABLES CSS===*/
+:root {
+  --header-height: 3rem;
+  --nav-width: 324px;
+
+  /*===Font weight===*/
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+
+  /*Colours*/
+  --first-color: #cc4b2c;
+  --first-color-dark: #662616;
+  --first-color-darken: #290f09;
+  --text-color: #54423d;
+  --first-color-light: #eae7e6;
+  --first-color-lighten: #fffafa;
+  --boxShadowColor: hsl(240, 4%, 36%);
+
+  /*===Font and topography===*/
+  --body-font: "Poppins", san-serif;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+
+  /*===Margenes===*/
+  --mb-1: 0.5rem;
+  --mb-2: 1rem;
+  --mb-3: 1.5rem;
+  --mb-4: 2rem;
+  --mb-5: 2.5rem;
+
+  /*===z index===*/
+  --z-fixed: 100;
+}
+
+.contacts {
+  width: 100%;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left-contact {
+  position: relative;
+  flex-basis: 48%;
+  padding-left: 5%;
+  /* margin-left: 30px; */
+
+  h2 {
+    color: #000f38;
+    font-weight: 600;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  p {
+    max-width: 450px;
+    line-height: 1.5;
+    text-align: justify;
+    color: var(--text-color);
+  }
+
+  .contact-info {
+    padding: 10px;
+    align-items: center;
+    display: block;
+    h3 {
+      align-items: center;
+      color: var(--text-color);
+      line-height: 1.5;
+      font-size: var(--h3-font-size);
+      .icon {
+        font-size: var(--h3-font-size);
+      }
+    }
+    span {
+      color: var(--text-color);
+      line-height: 1.5;
+    }
+  }
+}
+
+.right-contact {
+  flex-basis: 48%;
+  padding-right: 5%;
+  /* margin-right: 30px; */
+  max-width: 100%;
+
+  form {
+    input,
+    textarea {
+      display: block;
+      width: 100%;
+      background: var(--first-color-light);
+      padding: 15px;
+      border: 0;
+      outline: 0;
+      margin-bottom: 15px;
+      margin-top: 5px;
+      resize: none;
+    }
+  }
+}
+
+/* media queries */
+@media (max-width: 768px) {
+  /* Styles for smaller screens */
+  .contacts {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+  }
+
+  .left-contact,
+  .right-contact {
+    flex-basis: 100%; /* Set both sections to full width */
+    max-width: 100%; /* Set both sections to full width */
+  }
+}

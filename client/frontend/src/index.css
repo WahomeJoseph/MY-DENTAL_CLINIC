@@ -1,0 +1,62 @@
+/* @import 'tailwind/base';
+@import 'tailwind/components';
+@import 'tailwind/utilities'; */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  cursor: pointer;
+  font-weight: 500;
+ }
+
+body {
+  text-decoration: none;
+  margin: 0;
+  display: flex;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px 0;
+  width: 100px;
+  height: 40px;
+  border: 1px solid rgba(8,0,58, 0.9);
+  padding: 0.6rem 1rem;
+  font-weight: 500;
+  color: #1a1a1a;
+  background: #fffafa;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+.btn:hover {
+  color: #fff;
+  background: rgba(8,0,58, 0.9);
+  border-radius: 20px;
+}
+.btn .icon {
+  width: 50px;
+  margin: 0;
+  margin-left: 10px;
+}
+.btn:focus,
+.btn:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  .btn {
+    background-color: #f9f9f9;
+  }
+}
