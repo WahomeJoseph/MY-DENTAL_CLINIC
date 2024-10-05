@@ -1,0 +1,9 @@
+client/frontend/node_modules
+client/backend/node_modules
+client/.vscode
+
+admin/.vscode
+admin/frontend/node_modules
+admin/server/node_modules
+
+.vscode
